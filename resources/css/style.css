@@ -1,0 +1,315 @@
+﻿/* ----------------------------------------------------------------------
+    Genel
+---------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'RuckSack', sans-serif;
+    color: #0A0203;
+    background: #ffffff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.6;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+a:hover{text-decoration:none;color: #fd5671;}
+
+a{color:#000000}
+
+a, button, input[type=submit] {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    text-decoration: none;
+}
+
+img{border:0px;}
+
+ul {margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;}
+
+a, button, input[type=submit] {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    text-decoration: none;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+
+
+
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+button:focus, a:focus{
+    outline: 0px auto -webkit-focus-ring-color!important;}
+
+
+.form-control:focus{box-shadow:unset!important;}
+
+
+input, textarea, select, a, button{border-radius:0px!important; outline:none;}
+textarea{font-size:14px!important;}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{background-color: #DF206C!important;}
+.custom-control-input:checked~.custom-control-label::before {background-color: #DF206C!important;}
+.custom-control-label::before, .custom-control-label::after{border-radius:0px!important; width:20px; height:20px;}
+
+.page-item.active .page-link {background-color: #E4322D;border-color: #E4322D;}
+.page-link, .page-link:hover {color: #E4322D;}
+
+.text-area{height:unset!important;}
+
+/* ----------------------------------------------------------------------
+    HEADER
+---------------------------------------------------------------------- */
+
+header{
+  width: 100%;
+  padding:0px 0px 0px 0px;
+  color: #fff;
+  background:transparent;
+  position: absolute;
+  z-index:999;
+  transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+
+
+header.sticky {
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  padding:7px 0px 7px 0px;
+  position: fixed;
+  width: 100%;
+}
+
+
+
+
+@media (max-width: 991px) {
+.navbar-brand{display:inline-block;}
+}
+
+
+/* ----------------------------------------------------------------------
+    ETKİNLİK TAKVİMİ
+---------------------------------------------------------------------- */
+
+.etkinlik-baslik{
+    overflow:hidden;
+    height:80px;
+    width:50%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
+
+.etkinlik-baslik h2{
+    color:#ffffff;
+    font-size:40px;
+    font-weight:500;
+    font-family: 'Dosis', sans-serif;
+    line-height:30px;
+    padding:20px 0px 25px 0px;
+    text-align:center;
+}
+
+
+
+.etkinlik-genel{ 
+    background-size:cover;
+    background-position:center center;
+    margin-top:-15px;
+}
+
+.etkinlik-background{
+    background-color:rgba(51,51,51,0.95)
+}
+
+.etkinlik-slide{padding:50px 0px;}
+
+.etkinlik-slide .item{border-right:1px #595959 dotted;}
+
+.etkinlik-bilgi-hiza{height:99px}
+
+.etkinlik-bilgi h3{
+    font-size:18px;
+    color:#FFFFFF;
+    font-weight:500;
+    max-height:69px;
+    line-height:23px;
+    overflow:hidden;
+}
+
+
+.etkinlik-resim{
+    width:250px;
+    height:250px;
+    border:5px #b9b9b9 solid;
+    background-size:cover;
+    background-position:top center;
+    overflow:hidden;
+    margin-top:15px;
+    float:left;
+    text-align:center;
+}
+
+.etkinlik-resim a{
+    display:block;
+    width:100%;
+    height:100vh;
+}
+
+.etkinlik-slide .owl-dots .owl-dot.active span, .etkinlik-slide .owl-dots .owl-dot:hover span{background:#E13450;}
+.etkinlik-slide .owl-dots{margin-top:30px!important;}
+
+@media (max-width: 768px) {
+.etkinlik-slide .item{border-right:0px;}
+
+}
+
+
+
+
+/* ----------------------------------------------------------------------
+    FOOTER
+---------------------------------------------------------------------- */
+
+.footer{
+    max-width:1400px;
+    margin:0px auto;
+    padding:15px 0px;
+    border-top:1px #CDCDCD solid;
+    border-bottom:1px #CDCDCD solid;
+}
+
+.copyright{
+    font-size:18px;
+    color:#666666;
+    text-align:center;
+    padding:10px 0px;
+    font-family: 'Dosis', sans-serif;
+    width:100%;
+}
+
+.footer-adres{
+    color:#333333;
+    font-size:18px;
+    font-family: 'Dosis', sans-serif;
+    font-weight:400;
+    padding:0px 0px 5px 15px;
+}
+
+.footer-adres i{
+    font-size:18px;
+    width:30px;
+    color:#000000;
+}
+
+.footer-adres span{font-weight:600;}
+
+.btn-maillist{
+    background-color:#666666;
+    color:#ffffff;
+    font-size:16px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.mail-list-form input{
+    font-size:16px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.footer-social{
+    text-align:right;
+    margin-top:15px;
+}
+
+.footer-social a{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    text-align:center;
+    background-color:#DFDFDD;
+    margin-left:5px;
+}
+
+.footer-social i{
+    color:#212121;
+    font-size:20px;
+    line-height:50px;
+}
+
+
+@media (max-width: 1200px) {
+.footer-adres, .list-mesaj, .copyright{font-size:14px;}
+
+}
+
+
+@media (max-width: 768px) {
+.footer-adres {padding: 0px 0px 5px 0px;} 
+.mail-list{margin-top:30px;}
+.list-mesaj, .footer-social{text-align:left;}
+.footer-social a{margin-left: 0px; margin-right:5px;}
+
+}
+
+
+@media (max-width: 1200px) {
+    
+
+}
+
+
+@media (max-width: 992px) {
+    
+
+}
+
+
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 480px) {
+
+    #logos{
+        margin-bottom: 20%;
+    }
+
+    .etkinlik-baslik h2{
+        font-size: 25px;
+    }
+
+    .etkinlik-resim{
+        margin-left: 18%;
+    }
+
+}
